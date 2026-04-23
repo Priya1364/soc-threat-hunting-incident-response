@@ -1,0 +1,67 @@
+Scenerio 
+A cyber-attack took place against an organization where phishing was done. The employees received emails that appeared to come from a reputable bank.
+The email contained malicious links which were clicked by the victim. Clicking on the link, the attacker then attempted to perform unauthorized access to the system.
+Due to the above activity, there were multiple failed login attempts and triggers generated within the SIEM platform.
+The SOC analyst identified the event and executed the necessary actions.
+
+DETECTION PHASE
+
+This type of attack was detected using various forms of security monitoring tools.
+A peculiar phishing mail was observed by the user and reported as unusual.
+This email consisted of an odd link that did not pertain to the domain.
+Upon clicking on the link, various login attempts were observed to have failed.
+Various alerts were generated from the SIEM system (Splunk) based on the unusual login attempts.
+Based on these alerts, the possibility of accessing the network existed.
+An analysis by the SOC analyst confirmed that there was some security threat.
+
+Containment Phase
+After confirming that a phishing attack had been carried out, several steps were taken to stop further damage.
+The email containing the phishing scam was flagged as malicious and deleted from the inbox of the user (simulation)
+The domain name of the email address used to conduct the phishing scam was blacklisted
+The malicious URL was detected, and access to it was stopped (simulation)
+The compromised user account was disabled
+Steps were taken to deny access to any suspicious IP addresses
+All users were advised not to respond to such emails
+
+ERADICATION PHASE
+Once the phishing attack was contained, measures were taken to fully eradicate all vestiges of the attack from the system and guard against recurrence.
+Phishing emails received were entirely wiped out from the organizational email system (simulation)
+Malicious files and scripts downloaded from the phishing link were located and deleted (simulation)
+The infected computer was thoroughly searched for malware or any other suspicious activity
+The password of the compromised account was changed to secure the system
+Malicious processes running on the infected computer were stopped
+Security patches and updates were installed to shield the system from attacks
+These were key steps taken to fully eliminate the threat from the system.
+
+RECOVERY PHASE 
+Having successfully dealt with the phishing attack, measures were put in place to fix the affected systems to enable their proper functionality.
+The compromised user account was activated through password recovery by setting a stronger password.
+The multi-factor authentication method was recommended and activated to protect the system against possible future attacks.
+The compromised system was under constant monitoring for signs of any unusual activity.
+Services and applications on the system were brought back to their normal status.
+System logs were checked again for the sake of verifying that the attack was indeed eliminated.
+Any backed-up data on the system that was affected was also recovered.
+Finally, security awareness guidelines were offered to the user in order to protect him from such an attack in the future.
+
+Lessons Learned
+Phishing emails remain a major entry point for attackers
+Users must verify email domains before clicking links
+Early detection through SIEM alerts is critical
+Strong password policies and MFA improve security
+Security awareness training is essential for prevention
+
+Timeline
+
+10:00 AM – Phishing email received  
+10:05 AM – User clicked malicious link  
+10:06 AM – Multiple login failures detected  
+10:07 AM – SIEM alert triggered  
+10:10 AM – SOC analyst started investigation  
+10:20 AM – Containment actions applied
+
+Indicators of Compromise:
+
+- Suspicious email domain: hdfcbank-support.com  
+- Malicious URL: hdfc-secure-login.xyz  
+- Multiple failed login attempts  
+- Unknown IP activity
