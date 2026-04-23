@@ -66,7 +66,22 @@ Unknown IP activity
 SOC Workflow
 Phishing Email → User Click → Login Attempts → SIEM Alert → SOC Analysis → Response
 ------
+Tools Mapping
+Wireshark → Network traffic analysis
+- Logs → System activity monitoring
+- Splunk → SIEM alert detection
+- Email analysis → Phishing detection
+  
+------
+Role of SOC Analyst
 
+- Monitor alerts from SIEM
+- Investigate suspicious activity
+- Identify attack patterns
+- Respond to incidents
+- Prevent future attacks
+
+------
 Screenshots
 Include images from:
 Network analysis (Wireshark)
@@ -88,6 +103,15 @@ Real-world cybersecurity practices
 ⚠️ Incident Severity
 HIGH
 -----
+
+Future Improvements
+
+- Automate detection using SIEM rules
+- Integrate EDR tools
+- Use real-time threat intelligence
+- Implement SOAR automation
+
+------
 
 ✅ Conclusion
 This project demonstrates how SOC analysts detect, analyze, and respond to cyber threats using a structured approach. It reflects real-world cybersecurity operations and practical skills required for SOC roles.
